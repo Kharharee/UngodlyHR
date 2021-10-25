@@ -4,14 +4,17 @@ import Logo from "../img/UGHlogo.png";
 import "./Navbar.css";
 
 function Navbar() {
-    const [openLinks, setOpenLinks] = useState(false);
-  
-    const toggleNavbar = () => {
-      setOpenLinks(!openLinks);
+  const [openLinks,setOpenLinks] = useState(false);
+
+    
+  const Navbar = () => {
+    setOpenLinks(!openLinks);
+   
     };
     return (
       <div className="navbar">
-        <div className="leftSide" id={openLinks ? "open" : "close"}>
+              <div className="leftSide" id={openLinks ? "open" : "close"}>
+
           <img src={Logo} />
           <div className="hiddenLinks">
             <Link to="/"> Home </Link>
